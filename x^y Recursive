@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+int mult(int x,int y){
+	if(y==1)
+	return x;
+	else
+	return x*mult(x,y-1);
+}
+int main(){
+int sum,x,y;
+cout<<"enter values to multiply:";
+cin>>x>>y;
+if(x==0)
+sum=0;
+else if(y==0 || x==1)
+sum=1;
+else if(y==1)
+sum=x;
+else
+sum=mult(x,y);
+cout<<"result:"<<sum;
+return 0;
+}
