@@ -1,0 +1,11 @@
+#include<iostream>
+using namespace std;
+int main(){
+int sum=1,x,y;
+cout<<"enter values of x and y:";
+cin>>x>>y;
+for(int i=1;i<=y;i++)
+	sum=sum*x;
+cout<<"result:"<<sum;
+return 0;
+}
