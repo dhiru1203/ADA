@@ -1,0 +1,13 @@
+#include<iostream>
+using namespace std;
+int main(){
+int quo=0,rem=0,x,y;
+cout<<"Enter numerator and denominator:";
+cin>>x>>y;
+for(int i=x;i>=y;i-=y){
+	quo++;
+	rem=i-y;
+}
+cout<<"quotient:"<<quo<<"\nreminder:"<<rem;
+return 0;
+}
