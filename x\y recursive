@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+int mult(int x,int y,int &quo){
+	if(x<y)
+	return x;
+	else{
+		quo++;
+		return mult(x-y,y,quo);
+	}
+}
+int main(){
+int quo=0,rem,x,y;
+cout<<"Enter numerator and denominator:";
+cin>>x>>y;
+rem=mult(x,y,quo);
+cout<<"quotient:"<<quo<<"\nreminder:"<<rem;
+return 0;
+}
